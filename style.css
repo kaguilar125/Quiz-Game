@@ -8,74 +8,18 @@ body {
     background-color: #FDF0D5 !important;
   }
   
-  #imga{
-      width: 160px !important;
-  }
   
-  #wordsa{
-      background-color: transparent !important;
-  }
   
-  #text1{
-    padding-bottom: 40px;
-    padding-right: 40px;
-    text-align: center;
-    font-weight: bold;
     
-  }
+  
+    
+    
   
   
-   #imgb {
-      
-      
-    }
-  
-    #imgc {
-      
-    }
-  
-    #imgd {
-      
-    }
-  
-    #imge {
-      
-    } 
-  
-    .photoGallery .col-6 {
-      padding: 0;
+    #h1 {
       margin: 0;
-    }
-  
-    .img-fluid {
-      width: 100%!important;
-      height: 100%!important;
-    }
-    .photoGallery1 .col-8 {
-      padding: 20px;
-      margin-left: 525px;
-    }
-  
-    .img-fluid1 {
-      width: 100%!important;
-      height: 100%!important;
-    }
-  
-    .container-fluid .btn {
       position: absolute;
-      margin-top: 355px;
-      margin-right: 400px;
-      background-color: #555;
-      color: white;
-      font-size: 16px;
-      padding: 12px 24px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
-    
-    .container .btn:hover {
-      background-color: black;
-    }
-  
-    
