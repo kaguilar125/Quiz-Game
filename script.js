@@ -1,22 +1,37 @@
-function imgclick() {
-  alert("How to play? Click on an option which you believe responds to the question correctly.");
-}
+let correctCount = 0;
+let incorrectCount = 0;
 
 document.querySelectorAll('.option').forEach(item => {
   item.addEventListener('click', event => {
       const isCorrect = item.classList.contains('correct');
       if (isCorrect) {
-          item.style.borderColor = '#00FF00'; 
+        item.style.borderColor = '#00FF00';
+        correctCount++; 
+          if (item.id === 'option3') {
+              window.location.href = 'next_page.html'; 
+          }
+          if (item.id === 'option4') {
+              window.location.href = 'third_page.html'; 
+          }
+          if (item.id === 'option5') {
+            window.location.href = 'fourth_page.html';
+          }
+          if (item.id === 'option6') {
+            window.location.href = 'fifth_page.html'; 
+          }
+          if (item.id === 'option7') {
+            window.location.href = 'sixth_page.html'; 
+          }
       } else {
-          item.style.borderColor = '#FF0000';
+        item.style.borderColor = '#FF0000';
+        document.querySelector('.correct').style.borderColor = '#00FF00';
+        incorrectCount++; 
+    }
 
-          document.querySelector('.correct').style.borderColor = '#00FF00';
-      }
-
-
-      const progressIndicator = document.getElementById('progress-indicator');
-      const totalQuestions = document.querySelectorAll('.correct').length;
-      const answeredQuestions = document.querySelectorAll('.correct[style*="border-color: rgb(0, 255, 0)"]').length;
-      progressIndicator.textContent = `Progress: ${answeredQuestions}/${totalQuestions}`;
+    const progressIndicator = document.getElementById('progress-indicator');
+    progressIndicator.textContent = `Progress: Correct - ${correctCount}, Incorrect - ${incorrectCount}`;
   });
 });
+
+
+
