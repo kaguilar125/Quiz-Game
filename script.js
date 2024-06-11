@@ -7,21 +7,22 @@ document.querySelectorAll('.option').forEach(item => {
       if (isCorrect) {
         item.style.borderColor = '#00FF00';
         correctCount++; 
-          if (item.id === 'option3') {
-              window.location.href = 'next_page.html'; 
-          }
-          if (item.id === 'option4') {
-              window.location.href = 'third_page.html'; 
-          }
-          if (item.id === 'option5') {
-            window.location.href = 'fourth_page.html';
-          }
-          if (item.id === 'option6') {
-            window.location.href = 'fifth_page.html'; 
-          }
-          if (item.id === 'option7') {
-            window.location.href = 'sixth_page.html'; 
-          }
+        if (item.id === 'option3') {
+          window.location.href = 'next_page.html'; 
+        }
+        if (item.id === 'option4') {
+          window.location.href = 'third_page.html'; 
+        }
+        if (item.id === 'option5') {
+          window.location.href = 'fourth_page.html';
+        }
+        if (item.id === 'option6') {
+          window.location.href = 'fifth_page.html'; 
+        }
+        if (item.id === 'option7') {
+          window.location.href = 'sixth_page.html'; 
+        }
+        console.log(item.id);
       } else {
         item.style.borderColor = '#FF0000';
         document.querySelector('.correct').style.borderColor = '#00FF00';
